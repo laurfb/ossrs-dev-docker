@@ -8,7 +8,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 >docker build --no-cache -t docker_image_name .
 
-**Obs.:** replace **server.crt** and **server.key** with your own!
+**Obs.:** replace **server.crt** and **server.key** with your own! Also adapt conf file to your needs.
 
 # Run SRS in docker
 
