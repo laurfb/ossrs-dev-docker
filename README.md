@@ -1,5 +1,6 @@
-Docker for OSSRS / SRS (Simple Realtime Server) - https://github.com/ossrs/srs.
-Build dev SRS v6.0 version on ubuntu:latest
+Docker for **OSSRS / SRS** (Simple Realtime Server) - https://github.com/ossrs/srs.
+
+Build dev **SRS v6.0** dev version on **ubuntu:latest**
 
 # Build docker
 
