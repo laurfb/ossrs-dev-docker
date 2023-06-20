@@ -10,7 +10,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 **Obs.:** replace **server.crt** and **server.key** with your own!
 
-# Run SRS in dev docker
+# Run SRS in docker
 
 >docker run -p 1935:1935 -p 1985:1985 -p 1990:1990 -p 8080:8080 -p 8085:8085 -p 8088:8088 -p 8000:8000 -p 10080:10080 docker_image_name
 
