@@ -1,12 +1,12 @@
 Docker for **OSSRS / SRS** (Simple Realtime Server) - https://github.com/ossrs/srs.
 
-Build dev **SRS v6.0** dev version on **ubuntu:latest**
+Build **SRS v6.0** dev version on **ubuntu:latest**
 
 # Build docker
 
 >docker build --no-cache -t docker_image_name .
 
-**Obs.:** replace server.crt and server.key with your own!
+**Obs.:** replace **server.crt** and **server.key** with your own!
 
 # Run SRS in dev docker
 
