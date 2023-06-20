@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: docker build . --file docker --tag ossrs_me:$(date +%s)
+        run: docker build -t ossrs_me:$(date +%s) . 
           echo Add other actions to build,
           echo test, and deploy your project.
 
