@@ -3,7 +3,7 @@ Build dev SRS v6.0 version on ubuntu:latest
 
 # Build docker
 
->docker build --no-cache -t docker_image_name .<
+>docker build --no-cache -t docker_image_name .
 
 **Obs.:** replace server.crt and server.key with your own!
 
