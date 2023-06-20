@@ -9,7 +9,7 @@ Build dev SRS v6.0 version on ubuntu:latest
 
 # Run SRS in dev docker
 
->docker run -p 1935:1935 -p 1985:1985 -p 1990:1990 -p 8080:8080 -p 8085:8085 -p 8088:8088 -p 8000:8000 -p 10080:10080-docker_image_name<
+>docker run -p 1935:1935 -p 1985:1985 -p 1990:1990 -p 8080:8080 -p 8085:8085 -p 8088:8088 -p 8000:8000 -p 10080:10080-docker_image_name
 
 Exposed/Used ports: 1935 - rtmp, 1985 - http api, 1990 - https api, 8080 - http server, 8088 - https server, 8000 - WebRTC, 10080 - SRT
 
