@@ -23,4 +23,4 @@ VOLUME /logs
 EXPOSE 1935 1985 1990 8000/udp 8088 10080/udp
 WORKDIR /usr/local/srs
 ENV SRS_LOG_TANK=console SRS_DAEMON=off
-CMD ["./objs/srs", "-c", "conf/srs.conf"]
+CMD ["./objs/srs", "-c", "conf/conf_me.conf"]
