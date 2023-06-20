@@ -13,10 +13,11 @@ RUN ./configure --gb28181=on --h265=on && make && make install
 #VOLUME /logs
 #EXPOSE 1935 1985 1990 8000/udp 8088 10080/udp
 
-#Copy libs in image (ubuntu latest)
+#Copy libs & conf files in image (ubuntu latest)
 FROM ubuntu:latest AS dist
 COPY --from=build /usr/local/srs /usr/local/srs
 COPY --from=build /usr/bin/ffmpeg /usr/local/srs/objs/ffmpeg/bin/ffmpeg
+COPY . conf_me.conf /usr/local/srs/conf/
 
 # Default workdir, ports used/exposed and command.
 VOLUME /logs
