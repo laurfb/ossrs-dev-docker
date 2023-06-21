@@ -16,9 +16,8 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 **Exposed/Used ports:** 1935 - rtmp, 1985 - http api, 1990 - https api, 8080 - http server, 8088 - https server, 8000 - WebRTC, 10080 - SRT
 
-Note:
-=====
-#**Test with ffmpeg:**
+
+**Test with ffmpeg:**
 =====
 
 **Push RTMP stream:** 
