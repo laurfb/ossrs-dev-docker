@@ -28,7 +28,7 @@ Note:
 
 >ffmpeg -i input -c:v libx264 -profile main -preset veryfast -tune zerolatency -c:a aac -b:a 256K -f mpegts srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,m=publish
 
-
+<br>
 **Play RTMP stream:**
 
 >ffplay-fflags nobuffer rtmp://your_srs_docker_adress/live/your_live_stream_key -x 640 -y 360
