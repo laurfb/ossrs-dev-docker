@@ -9,10 +9,6 @@ RUN git clone -b develop https://github.com/ossrs/srs.git srs
 WORKDIR /tmp/srs/trunk
 RUN ./configure --gb28181=on --h265=on && make && make install
 
-#Define ports used/exposed
-#VOLUME /logs
-#EXPOSE 1935 1985 1990 8000/udp 8088 10080/udp
-
 #Copy libs & conf files in image (ubuntu latest)
 FROM ubuntu:latest AS dist
 COPY --from=build /usr/local/srs /usr/local/srs
