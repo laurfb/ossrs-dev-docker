@@ -45,7 +45,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 >ffplay -fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.flv -x 640 -y 360
 
-**Play with OBS (stream address):**
+**Play with OBS:**
 >rtmp/rtmps: rtmp(s)://your_srs_docker_adress:1935(8088)/live/your_live_stream_key
 
 >srt: srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,latency=200,m=request
