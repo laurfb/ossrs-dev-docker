@@ -22,11 +22,19 @@ Note:
 
 **push rtmp stream:** 
 
->ffmpeg -i input -c:v libx264 -profile main -preset veryfast -tune zerolatency -c:a aac -b:a 256K -f flv rtmp://your_srs_docker_adress/live/your_live_stream_key
+>ffmpeg -i input -c:v libx264 -profile main -preset veryfast -tune zerolatency -c:a aac -b:a 256K -f flv rtmp://your_srs_docker_adress:1935/live/your_live_stream_key
+
+**push srt stream:** 
+
+>ffmpeg -i input -c:v libx264 -profile main -preset veryfast -tune zerolatency -c:a aac -b:a 256K -f mpegts srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,m=publish
 
 **play rtmp stream:**
 
 >ffplay-fflags nobuffer rtmp://your_srs_docker_adress/live/your_live_stream_key -x 640 -y 360
+
+**play srt stream:**
+
+>ffplay-fflags nobuffer srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,latency=200,m=request -x 640 -y 360
 
 ReleaseNote
 ============
