@@ -17,7 +17,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 **Exposed/Used ports:** 1935 - rtmp, 1985 - http api, 1990 - https api, 8080 - http server, 8088 - https server, 8000 - WebRTC, 10080 - SRT
 
 
-**Test with ffmpeg//ffplay:**
+**Test with ffmpeg/ffplay/OBS:**
 =====
 
 **Push RTMP stream:** 
@@ -44,6 +44,12 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 **Play FLV (http/https) stream:**
 
 >ffplay -fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.flv -x 640 -y 360
+
+**Play with OBS (stream address):**
+rtmp/rtmps: rtmp(s)://your_srs_docker_adress:1935(8088)/live/your_live_stream_key
+srt: srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,latency=200,m=request
+hls (http/https): http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.m3u8
+flv (htp/https): http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.flv
 
 ReleaseNote
 ============
