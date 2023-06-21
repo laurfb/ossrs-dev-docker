@@ -31,15 +31,15 @@ Note:
 
 **Play RTMP stream:**
 
->ffplay-fflags nobuffer rtmp://your_srs_docker_adress/live/your_live_stream_key -x 640 -y 360
+>ffplay -fflags nobuffer rtmp://your_srs_docker_adress/live/your_live_stream_key -x 640 -y 360
 
 **Play SRT stream:**
 
->ffplay-fflags nobuffer srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,latency=200,m=request -x 640 -y 360
+>ffplay -fflags nobuffer srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,latency=200,m=request -x 640 -y 360
 
 **Play HLS (http/https) stream:**
 
->ffplay-fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.m3u8 -x 640 -y 360
+>ffplay -fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.m3u8 -x 640 -y 360
 
 **Play FLV (http/https) stream:**
 
