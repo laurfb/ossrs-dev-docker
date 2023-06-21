@@ -17,7 +17,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 **Exposed/Used ports:** 1935 - rtmp, 1985 - http api, 1990 - https api, 8080 - http server, 8088 - https server, 8000 - WebRTC, 10080 - SRT
 
 
-**Test with ffmpeg/ffplay/OBS:**
+**Test with ffmpeg:**
 =====
 
 **Push RTMP stream:** 
@@ -28,7 +28,8 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 >ffmpeg -i input -c:v libx264 -profile main -preset veryfast -tune zerolatency -c:a aac -b:a 256K -f mpegts srt://your_srs_docker_adress:10080?streamid=#!::r=live/your_live_stream_key,m=publish
 
-
+Play with ffplay
+====
 **Play RTMP stream:**
 
 >ffplay -fflags nobuffer rtmp://your_srs_docker_adress/live/your_live_stream_key -x 640 -y 360
