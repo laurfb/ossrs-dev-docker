@@ -43,7 +43,7 @@ All credit should go to the original tool author(s) - this is just a dockerizati
 
 **Play FLV (http/https) stream:**
 
->ffplay-fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.flv -x 640 -y 360
+>ffplay -fflags nobuffer http(s)://your_srs_docker_adress:8080(8088)/live/your_live_stream_key.flv -x 640 -y 360
 
 ReleaseNote
 ============
